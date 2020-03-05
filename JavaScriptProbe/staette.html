@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Einsendeaufgabe</title>
+</head>
+<body>
+<h1 id="datum"></h1>
+<figure style="display: flex; flex-direction: row;">
+<div>
+<img src="images1/amsterdam1.jpg" alt="Amsterdam" id="bild1" 
+		 onmouseover="austauschen('bild1', 'images1/amsterdam2.jpg')">
+<figcaption>Amsterdam</figcaption>
+</div>
+<div>
+<img src="images1/madrid1.jpg" alt="Madrid" id="bild2"
+		 onmouseover="austauschen('bild2', 'images1/madrid2.jpg')">
+<figcaption>Madrid</figcaption>
+</div>
+<div>
+<img src="images1/venezia1.jpg" alt="Venezia" id="bild3"
+         onmouseover="austauschen('bild3', 'images1/venezia2.jpg')">
+<figcaption>Venezia</figcaption>
+</div>
+</figure>
+
+<form name="myform" method="post" action="" onsubmit= "return pruefen()">
+ <label for="nachname">* Nachname: </label><br>
+ <input type="text" name="nachname" id="nachname" size="20" maxlength="30"><br>
+ <label for="email">* E-Mail-Adresse: </label><br>
+ <input type="email" name="mail" id="email"><br>
+ <p>Felder mit * Sternchen kennzeichnen, müssen ausgefühlt sein, um das Formular abschicken zu können.</p><br>
+ <input type="submit" value="Senden">
+ </form>
+
+<script src="extern-mmde05d.js"></script>
+</body>
+</html>
